@@ -1,12 +1,21 @@
 // 掲示板ページのスタイルを定義するためのscssファイル
-.boards_table {
+.boards__table {
   tr:hover {
-    cursor: pointer
+    cursor: pointer;
   }
 }
 
-.boards_linkBox {
+.boards__linkBox {
   a {
     margin: 0 8px;
   }
+}
+
+.boards__searchForm {
+  display: inline-block;
+}
+
+.boards__select {
+  display: inline-block;
+  width: auto;
 }

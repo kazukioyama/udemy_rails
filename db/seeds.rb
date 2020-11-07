@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+if Rails.env == 'development'
+  (1..10).each do |i|
+    Board.create(name: "ユーザー#{i}", title: "タイトル#{i}", body: "本文#{i}")
+  end
+
+  Tag.create([
+    { name: '通常' },
+    { name: '仕事' },
+    { name: '試験' },
+    { name: '宿泊' },
+    { name: 'その他' }
+  ])
+end
